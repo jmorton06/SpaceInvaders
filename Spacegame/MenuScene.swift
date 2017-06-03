@@ -17,7 +17,8 @@ class MenuScene: SKScene {
     var difficultyButtonNode:SKSpriteNode!
     var diffcultyLabel:SKLabelNode!
     
-    override func didMove(to view: SKView) {
+    override func didMove(to view: SKView)
+    {
     
         
         starfield = self.childNode(withName: "starfield") as! SKEmitterNode
@@ -33,9 +34,12 @@ class MenuScene: SKScene {
         
         let userDefaults = UserDefaults.standard
         
-        if userDefaults.bool(forKey: "hard") {
+        if userDefaults.bool(forKey: "hard")
+        {
             diffcultyLabel.text = "Hard"
-        }else{
+        }
+        else
+        {
             diffcultyLabel.text = "Easy"
         }
         
@@ -63,10 +67,13 @@ class MenuScene: SKScene {
         
         let userDefaults = UserDefaults.standard
         
-        if diffcultyLabel.text == "Easy" {
+        if diffcultyLabel.text == "Easy"
+        {
             diffcultyLabel.text = "Hard"
             userDefaults.set(true, forKey: "hard")
-        }else{
+        }
+        else
+        {
             diffcultyLabel.text = "Easy"
             userDefaults.set(false, forKey: "hard")
         }
