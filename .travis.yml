@@ -1,5 +1,13 @@
-language: swift
+language: objective-c
+
+branches:
+ only:
+ - master
+ 
 osx_image: xcode8.3 
 xcode_project: spacegame.xcodeproj 
-xcode_scheme: spacegame 
-xcode_sdk: iphonesimulator10.0 
+xcode_scheme: Spacegame 
+xcode_sdk: iphonesimulator10.3 
+
+script:
+- xcodebuild clean build test -project spacegame.xcodeproj -scheme Spacegame
