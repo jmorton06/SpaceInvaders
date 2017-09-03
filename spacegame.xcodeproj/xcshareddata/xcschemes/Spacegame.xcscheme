@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "86CEE2041D9FC6210096FC63"
-               BuildableName = "SpacegameReloaded.app"
-               BlueprintName = "SpacegameReloaded"
+               BuildableName = "Spacegame.app"
+               BlueprintName = "Spacegame"
                ReferencedContainer = "container:spacegame.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,8 +34,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86CEE2041D9FC6210096FC63"
-            BuildableName = "SpacegameReloaded.app"
-            BlueprintName = "SpacegameReloaded"
+            BuildableName = "Spacegame.app"
+            BlueprintName = "Spacegame"
             ReferencedContainer = "container:spacegame.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -58,8 +58,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86CEE2041D9FC6210096FC63"
-            BuildableName = "SpacegameReloaded.app"
-            BlueprintName = "SpacegameReloaded"
+            BuildableName = "Spacegame.app"
+            BlueprintName = "Spacegame"
             ReferencedContainer = "container:spacegame.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -77,8 +77,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86CEE2041D9FC6210096FC63"
-            BuildableName = "SpacegameReloaded.app"
-            BlueprintName = "SpacegameReloaded"
+            BuildableName = "Spacegame.app"
+            BlueprintName = "Spacegame"
             ReferencedContainer = "container:spacegame.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
