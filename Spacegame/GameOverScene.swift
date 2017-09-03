@@ -10,7 +10,8 @@ import UIKit
 import SpriteKit
 
 
-class GameOverScene: SKScene {
+class GameOverScene: SKScene
+{
 
     var score:Int = 0
     

@@ -9,7 +9,8 @@
 import UIKit
 import SpriteKit
 
-class MenuScene: SKScene {
+class MenuScene: SKScene
+{
 
     var starfield:SKEmitterNode!
     

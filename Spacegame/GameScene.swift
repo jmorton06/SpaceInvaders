@@ -105,7 +105,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         }
     }
     
-    func addAlien ()
+    @objc func addAlien ()
     {
         possibleAliens = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: possibleAliens) as! [String]
         

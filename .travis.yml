@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode8.3 
+xcode_project: spacegame.xcodeproj 
+xcode_scheme: spacegame 
+xcode_sdk: iphonesimulator10.0 
