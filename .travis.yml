@@ -10,4 +10,4 @@ xcode_scheme: Spacegame
 xcode_sdk: iphonesimulator10.3 
 
 script:
-- xcodebuild clean build test -project spacegame.xcodeproj -scheme Spacegame
+- xcodebuild clean build -project spacegame.xcodeproj -scheme Spacegame
