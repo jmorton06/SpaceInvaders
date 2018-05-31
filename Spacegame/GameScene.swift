@@ -260,7 +260,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         
     }
     
-    override func didSimulatePhysics() {
+    override func didSimulatePhysics()
+    {
         
         player.position.x += xAcceleration * 50
         
@@ -280,7 +281,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     
     
     
-    override func update(_ currentTime: TimeInterval) {
+    override func update(_ currentTime: TimeInterval)
+    {
         // Called before each frame is rendered
     }
 }

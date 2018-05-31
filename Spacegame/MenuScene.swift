@@ -20,8 +20,6 @@ class MenuScene: SKScene
     
     override func didMove(to view: SKView)
     {
-    
-        
         starfield = self.childNode(withName: "starfield") as! SKEmitterNode
         starfield.advanceSimulationTime(10)
         

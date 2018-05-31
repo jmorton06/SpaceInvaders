@@ -36,7 +36,8 @@ class GameViewController: UIViewController
         }
     }
 
-    override var shouldAutorotate: Bool {
+    override var shouldAutorotate: Bool
+    {
         return true
     }
 
@@ -52,12 +53,14 @@ class GameViewController: UIViewController
         }
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
     }
 
-    override var prefersStatusBarHidden: Bool {
+    override var prefersStatusBarHidden: Bool
+    {
         return true
     }
 }
