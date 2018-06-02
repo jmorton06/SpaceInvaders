@@ -48,21 +48,28 @@ class MenuScene: SKScene
         
         
         let touch = touches.first
-        if let location = touch?.location(in: self) {
+        if let location = touch?.location(in: self)
+        {
             let node = self.nodes(at: location)
             
-            if node[0].name == "newGameButton" {
+            if node[0].name == "newGameButton"
+            {
                 let transition = SKTransition.flipHorizontal(withDuration: 0.5)
                 let gameScene = GameScene(size: self.size)
+                gameScene.scaleMode = .aspectFill
+                gameScene.size = (view?.bounds.size)!
                 self.view!.presentScene(gameScene, transition: transition)
-            }else if node[0].name == "difficultyButton" {
+            }
+            else if node[0].name == "difficultyButton"
+            {
                 changeDifficulty()
             }
         }
         
     }
     
-    func changeDifficulty(){
+    func changeDifficulty()
+    {
         
         let userDefaults = UserDefaults.standard
         

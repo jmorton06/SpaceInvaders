@@ -44,7 +44,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         addLives()
         
         starfield = SKEmitterNode(fileNamed: "Starfield")
-        starfield.position = CGPoint(x: 0, y: 1472)
+        starfield.position = CGPoint(x: 0, y: self.frame.size.height + 100)
         starfield.advanceSimulationTime(10)
         self.addChild(starfield)
         
@@ -86,9 +86,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                 self.xAcceleration = CGFloat(acceleration.x) * 0.75 + self.xAcceleration * 0.25
             }
         }
-        
-        
-        
     }
     
     func addLives ()
@@ -111,7 +108,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         
         let alien = SKSpriteNode(imageNamed: possibleAliens[0])
         
-        let randomAlienPosition = GKRandomDistribution(lowestValue: 0, highestValue: 414)
+        let randomAlienPosition = GKRandomDistribution(lowestValue: Int(alien.size.width), highestValue: Int(self.frame.size.width - (alien.size.width)))
         let position = CGFloat(randomAlienPosition.nextInt())
         
         alien.position = CGPoint(x: position, y: self.frame.size.height + alien.size.height)
@@ -237,8 +234,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             
             self.run(SKAction.playSoundFileNamed("explosion.mp3", waitForCompletion: false))
             
-             if let torpedo = torpedoNode
-             {
+            if let torpedo = torpedoNode
+            {
                 torpedo.removeFromParent()
             }
             
@@ -247,8 +244,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                 alien.removeFromParent()
             }
         
-            
-            
             self.run(SKAction.wait(forDuration: 2))
             {
                 explosion.removeFromParent()
@@ -256,8 +251,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             
             score += 5
         }
-        
-        
     }
     
     override func didSimulatePhysics()
@@ -275,11 +268,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         }
         
     }
-    
-    
-    
-    
-    
     
     override func update(_ currentTime: TimeInterval)
     {

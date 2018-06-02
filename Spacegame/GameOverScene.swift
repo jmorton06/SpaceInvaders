@@ -37,6 +37,8 @@ class GameOverScene: SKScene
         {
             let transition = SKTransition.flipHorizontal(withDuration: 0.5)
             let gameScene = GameScene(size: self.size)
+            gameScene.scaleMode = .aspectFill
+            gameScene.size = (view?.bounds.size)!
             self.view!.presentScene(gameScene, transition: transition)
         }
         
@@ -47,6 +49,7 @@ class GameOverScene: SKScene
             {
                 let transition = SKTransition.flipHorizontal(withDuration: 0.5)
                 scene.scaleMode = .aspectFill
+                scene.size = (view?.bounds.size)!
                 self.view!.presentScene(scene, transition: transition)
             }
         }
